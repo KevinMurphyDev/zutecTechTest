@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/base.css">
+      <title>Zutec Tech Test - Kevin Murphy - Home</title>
+    </head>     
+    <body>
+      <div>
+        <div class="header">
+          <div class="header-content">
+            <div class="header-logo-container">
+              <a href="">
+                <img width="190" src="https://www.zutec.com/wp-content/uploads/2021/02/logo.png">
+              </a>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li>
+                  <a href="pages/dashboard.html">Dashboard</a> 
+                </li>
+                <li>
+                  <a href="pages/projects.html">Projects</a>  
+                </li>
+                <li>
+                  <a href="pages/admin.html">Admin</a> 
+                </li>
+                <li>
+                  <a href="pages/drawings.html">Drawings</a> 
+                </li>
+                <li>
+                  <a href="pages/bim.html">BIM</a> 
+                </li>
+              </ul>
+            </nav> 
+            <div class="burger-menu-container">
+              <div class="burger-menu" id="burgerMenu"> 
+                <img width="30" src="./images/burger-menu-icon.png">
+              </div>
+            </div>
+            
+          </div>  
+          <div class="breadrumb">
+            <ul class="breadcrumb-list">
+              <li>Home</li>
+            </ul>
+          </div>
+        </div>
+       
+        <main>      
+          <section class='page-top-container'>
+            <div class='page-top-content'>
+              <div class='page-top-content-column'>
+                <div class='page-top-content-column-left'>
+                  <div class='page-top-content-inner'>
+                    <h1>Welcome to Zutec - Your Trusted Asset Manager </h1>
+                    <div>
+                      <a class="button" href="#loginpopup">Log In</a>
+                      <a class="button" href="#registerpopup">Register Now</a>
+                    </div> 
+                    <div id="loginpopup" class="overlay">
+                      <div class="popup">
+                        <h2>Sign In Now</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                          <form action="pages/dashboard.html">
+                            <label for="username">Username:</label><br>
+                            <input type="text" id="username" name="username" value="" class="popup-textfield" /><br>
+                            <label for="password">Password:</label><br>
+                            <input type="password" id="password" class="popup-textfield" />
+                            <input type="submit" value="Submit" class="button">
+                          </form> 
+                        </div>
+                      </div>
+                    </div>
+                    <div id="registerpopup" class="overlay">
+                      <div class="popup">
+                        <h2>Register Now</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                          <form action="pages/dashboard.html">
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" value="" class="popup-textfield" /><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" class="popup-textfield" />
+                            <label for="phone">Phone number:</label><br>
+                            <input type="tel" id="phone" name="phone" class="popup-textfield" />
+                            <label for="dob">Date of Birth:</label><br>
+                            <input type="date" id="dob" name="dob" class="popup-textfield" style="color: #afafaf;">
+                            <input type="submit" value="Submit" class="button">
+                          </form> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+              <div class='page-top-content-column'>
+                <div class='page-top-content-column-right' style="background-image: url('https://www.zutec.com/wp-content/uploads/2021/05/cairn-banner-image.jpg'); background-size: cover;"></div>
+              </div>
+            </div>
+          </section>  
+        </main>
+ 
+        <div id="menuModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <nav class="header-nav modal-nav">
+              <ul class="modal-content-list">
+                <li>
+                  <a href="pages/dashboard.html">Dashboard</a> 
+                </li>
+                <li>
+                  <a href="pages/projects.html">Projects</a>  
+                </li>
+                <li>
+                  <a href="pages/admin.html">Admin</a> 
+                </li>
+                <li>
+                  <a href="pages/drawings.html">Drawings</a> 
+                </li>
+                <li>
+                  <a href="pages/bim.html">BIM</a> 
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+       </div> 
+    
+      <script src="js/headercomponent.js"></script>
+      <script src="js/openmenumodal.js"></script>
+      
+    </body>
+</html>
